@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Macom - Katalog</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Macom</h1>
+    <nav>
+        <a href="index.html">Početna</a>
+        <a href="katalog.html">Katalog</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="#" id="otvoriKosaricu">Košarica 🛒</a>
+    </nav>
+</header>
+
+<main>
+    <h2>Katalog proizvoda</h2>
+
+    <div class="filteri">
+        <button onclick="filtriraj('sve')">Sve</button>
+        <button onclick="filtriraj('laptop')">Laptopi</button>
+        <button onclick="filtriraj('mis')">Miševi</button>
+        <button onclick="filtriraj('tipkovnica')">Tipkovnice</button>
+        <button onclick="filtriraj('slusalice')">Slušalice</button>
+        <button onclick="filtriraj('komponente')">Komponente</button>
+    </div>
+
+    <div id="proizvodi">
+
+        <div class="proizvod laptop">
+            <img src="https://cdnp3.stackassets.com/e6f2a8055a182d73fd4664804b8986c472f17895/store/f6d860cf347693e14b097d61759fb8d8179fe91b00fa1911e23dd6ed4574/image_processing20211130-73-18luzi3.jpg" alt="HP Pavilion 15-eg300">
+            <h3>HP Pavilion 15-eg300</h3><p>850 €</p>
+            <button onclick="dodajUKosaricu('HP Pavilion',850)">Dodaj</button>
+        </div>
+
+        <div class="proizvod laptop">
+            <img src="https://3mat.com.vn/wp-content/uploads/2022/08/42810_laptop_lenovo_ideapad_5_15ial7_82sf006lvn__5_.jpg" alt="Lenovo Ideapad 5 – 15IAL7">
+            <h3>Lenovo Ideapad 5-15I</h3><p>780 €</p>
+            <button onclick="dodajUKosaricu('Lenovo IdeaPad',780)">Dodaj</button>
+        </div>
+
+        <div class="proizvod laptop">
+            <img src="https://i5.walmartimages.com/seo/NEW-Dell-Inspiron-15-3520-15-6-FHD-120Hz-Laptop-Intel-i7-1255U-16GB-512GB-SSD-Win-11-Home_b546f2a0-4092-46ee-9d2f-d51faf143f63.0111f68922205da7df229197b8cf7bad.png">
+            <h3>Dell Inspiron 15 3520</h3><p>830 €</p>
+            <button onclick="dodajUKosaricu('Dell Inspiron',920)">Dodaj</button>
+        </div>
+
+        <div class="proizvod laptop">
+            <img src="https://pcworx.ph/cdn/shop/files/M1402IA-EB006WS_500x500.jpg?v=1706768248" alt="Asus VivoBook 15">
+            <h3>Asus VivoBook 15</h3><p>800 €</p>
+            <button onclick="dodajUKosaricu('Asus VivoBook',800)">Dodaj</button>
+        </div>
+
+        <div class="proizvod laptop">
+            <img src="https://cdn.thewirecutter.com/wp-content/media/2022/07/laptop-under-500-2048px-acer.jpg?auto=webp&quality=75&width=480" alt="Acer Aspire 5">
+            <h3>Acer Aspire 5</h3><p>750 €</p>
+            <button onclick="dodajUKosaricu('Acer Aspire',750)">Dodaj</button>
+        </div>
+
+        <div class="proizvod mis">
+            <img src="https://tse1.mm.bing.net/th/id/OIP.3FDITZNYTcImIYqufFKrjgHaHa?w=800&h=800&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Logitech G502">
+            <h3>Logitech G502</h3><p>60 €</p>
+            <button onclick="dodajUKosaricu('Logitech G502',60)">Dodaj</button>
+        </div>
+
+        <div class="proizvod mis">
+            <img src="https://cdn.wccftech.com/wp-content/uploads/2016/09/Razer-Deathadder-Elite-2-740x493.png" alt="Razer DeathAdder">
+            <h3>Razer DeathAdder</h3><p>55 €</p>
+            <button onclick="dodajUKosaricu('Razer DeathAdder',55)">Dodaj</button>
+        </div>
+
+        <div class="proizvod mis">
+            <img src="https://www.tradeinn.com/h/13766/137663609/steelseries-sensei-310-gaming-mouse.jpg" alt="SteelSeries Rival">
+            <h3>SteelSeries Rival</h3><p>50 €</p>
+            <button onclick="dodajUKosaricu('SteelSeries Rival',50)">Dodaj</button>
+        </div>
+
+        <div class="proizvod mis">
+            <img src="https://os-jo.com/image/cache/catalog/products/Accessories/Mouse/HyperX-Pulsefire-FPS-Pro-02-1200x1200.jpg" alt="HyperX Pulsefire">
+            <h3>HyperX Pulsefire</h3><p>48 €</p>
+            <button onclick="dodajUKosaricu('HyperX Pulsefire',48)">Dodaj</button>
+        </div>
+
+        <div class="proizvod mis">
+            <img src="https://tse4.mm.bing.net/th/id/OIP.GlM1MY79WZUXRoZpBcn5ZAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="MSI Clutch">
+            <h3>MSI Clutch</h3><p>45 €</p>
+            <button onclick="dodajUKosaricu('MSI Clutch',45)">Dodaj</button>
+        </div>
+
+        <div class="proizvod tipkovnica">
+            <img src="https://i.pinimg.com/originals/a4/9f/4b/a49f4b6f11eec3d633aa7d49c270d9c6.jpg" alt="Logitech K120">
+            <h3>Logitech K120</h3><p>25 €</p>
+            <button onclick="dodajUKosaricu('Logitech K120',25)">Dodaj</button>
+        </div>
+
+        <div class="proizvod tipkovnica">
+            <img src="https://m.media-amazon.com/images/I/815XJdl7fXL.jpg" alt="Razer BlackWidow">
+            <h3>Razer BlackWidow</h3><p>120 €</p>
+            <button onclick="dodajUKosaricu('Razer BlackWidow',120)">Dodaj</button>
+        </div>
+
+        <div class="proizvod tipkovnica">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.iiDjXGTZPohCoewiCitWVwHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="HyperX Alloy">
+            <h3>HyperX Alloy</h3><p>110 €</p>
+            <button onclick="dodajUKosaricu('HyperX Alloy',110)">Dodaj</button>
+        </div>
+
+        <div class="proizvod tipkovnica">
+            <img src="https://th.bing.com/th/id/R.2786b14db900ef3beb7346b23f38bd75?rik=7FnZDxRBy0%2bv4w&pid=ImgRaw&r=0" alt="SteelSeries Apex">
+            <h3>SteelSeries Apex</h3><p>130 €</p>
+            <button onclick="dodajUKosaricu('SteelSeries Apex',130)">Dodaj</button>
+        </div>
+
+        <div class="proizvod tipkovnica">
+            <img src="https://asset.msi.com/resize/image/global/product/product_169586976264035b984949cde58609ae078bc7cf32.png62405b38c58fe0f07fcef2367d8a9ba1/1024.png" alt="MSI Vigor">
+            <h3>MSI Vigor</h3><p>90 €</p>
+            <button onclick="dodajUKosaricu('MSI Vigor',90)">Dodaj</button>
+        </div>
+
+        <div class="proizvod slusalice">
+            <img src="https://hp.widen.net/content/ajq9mfi99d/webp/ajq9mfi99d.png?w=573&h=430&dpi=72&color=ffffff00" alt="HyperX Cloud II">
+            <h3>HyperX Cloud II</h3><p>95 €</p>
+            <button onclick="dodajUKosaricu('HyperX Cloud II',95)">Dodaj</button>
+        </div>
+
+        <div class="proizvod slusalice">
+            <img src="https://resource.logitechg.com/d_transparent.gif/content/dam/gaming/en/products/pro-x-2-lightspeed/gallery/gallery-1-pro-x-2-lightspeed-gaming-headset-black.png" alt="Logitech G Pro">
+            <h3>Logitech G Pro</h3><p>110 €</p>
+            <button onclick="dodajUKosaricu('Logitech G Pro',110)">Dodaj</button>
+        </div>
+
+        <div class="proizvod slusalice">
+            <img src="https://i.pinimg.com/736x/dc/1a/3c/dc1a3c05d67ae65dc0fbfb3acf73b198.jpg" alt="Razer Kraken">
+            <h3>Razer Kraken</h3><p>85 €</p>
+            <button onclick="dodajUKosaricu('Razer Kraken',85)">Dodaj</button>
+        </div>
+
+        <div class="proizvod slusalice">
+            <img src="https://media.steelseriescdn.com/thumbs/filer_public/9c/94/9c941697-51b9-41d9-8e1f-eda052e57b77/buyrender_arctis1_pc_001.png__1920x1080_crop-fit_optimize_subsampling-2.png" alt="SteelSeries Arctis">
+            <h3>SteelSeries Arctis</h3><p>120 €</p>
+            <button onclick="dodajUKosaricu('SteelSeries Arctis',120)">Dodaj</button>
+        </div>
+
+        <div class="proizvod slusalice">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.ylVhgHyDaV2mfhqSUrpLHQHaF7?rs=1&pid=ImgDetMain&o=7&rm=3" alt="MSI Immerse">
+            <h3>MSI Immerse</h3><p>75 €</p>
+            <button onclick="dodajUKosaricu('MSI Immerse',75)">Dodaj</button>
+        </div>
+
+        <div class="proizvod komponente">
+            <img src="https://multimedia.bbycastatic.ca/multimedia/products/400x400/171/17159/17159623.jpg" alt="RTX 4060">
+            <h3>RTX 4060</h3><p>450 €</p>
+            <button onclick="dodajUKosaricu('RTX 4060',450)">Dodaj</button>
+        </div>
+
+        <div class="proizvod komponente">
+            <img src="https://www.pcstudio.in/wp-content/uploads/2025/01/Asus-Dual-Rtx-4070-Super-12Gb-Gaming-Graphics-Card-9-1.webp" alt="RTX 4070">
+            <h3>RTX 4070</h3><p>650 €</p>
+            <button onclick="dodajUKosaricu('RTX 4070',650)">Dodaj</button>
+        </div>
+
+        <div class="proizvod komponente">
+            <img src="https://webshop.asus.com/media/f6/96/6c/1752173615/f1b439319dfadfdb1cf3f6be51e61a6ce67f9540-282886356-90yv0ld0-m0na00-webp_1752173614.webp?ts=1752173615" alt="RX 7600">
+            <h3>RX 7600</h3><p>400 €</p>
+            <button onclick="dodajUKosaricu('RX 7600',400)">Dodaj</button>
+        </div>
+
+        <div class="proizvod komponente">
+            <img src="https://www.intel.com/content/dam/www/central-libraries/xl/es/images/2022-06/km-1920x1080-i5.png" alt="Intel i5">
+            <h3>Intel i5</h3><p>250 €</p>
+            <button onclick="dodajUKosaricu('Intel i5',250)">Dodaj</button>
+        </div>
+
+        <div class="proizvod komponente">
+            <img src="https://www.amd.com/content/dam/amd/en/images/products/processors/ryzen/2505503-ryzen-5-5600x.jpg" alt="Ryzen 5">
+            <h3>Ryzen 5</h3><p>230 €</p>
+            <button onclick="dodajUKosaricu('Ryzen 5',230)">Dodaj</button>
+        </div>
+
+    </div>
+</main>
+
+<div id="cartSidebar" class="cart-sidebar">
+    <div class="cart-header">
+        <h2>Košarica</h2>
+        <span id="zatvoriKosaricu">&times;</span>
+    </div>
+
+    <ul id="kosarica"></ul>
+    <p><strong>Ukupno:</strong> <span id="ukupno">0</span> €</p>
+    <button onclick="ocistiKosaricu()">Očisti</button>
+</div>
+
+<footer>
+    <p>&copy; 2026 Macom</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

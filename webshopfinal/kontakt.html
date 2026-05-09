@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Macom - Kontakt</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Macom</h1>
+    <nav>
+        <a href="index.html">Početna</a>
+        <a href="katalog.html">Katalog</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="#" id="otvoriKosaricu">Košarica 🛒</a>
+    </nav>
+</header>
+
+<main class="kontakt-container">
+
+    <section class="kontakt-info">
+        <h2>Kontakt informacije</h2>
+
+        <div class="kontakt-card">
+            <p><strong>Email:</strong> info@itwebshop.hr</p>
+            <p><strong>Telefon:</strong> +385 91 123 4567</p>
+            <p><strong>Adresa:</strong> Ulica Primjera 15, 10000 Zagreb</p>
+        </div>
+
+        <div class="kontakt-card">
+            <h3>Radno vrijeme</h3>
+            <table class="radno-vrijeme">
+                <tr>
+                    <th>Dan</th>
+                    <th>Vrijeme</th>
+                </tr>
+                <tr><td>Ponedjeljak</td><td>08:00 – 16:00</td></tr>
+                <tr><td>Utorak</td><td>08:00 – 16:00</td></tr>
+                <tr><td>Srijeda</td><td>08:00 – 16:00</td></tr>
+                <tr><td>Četvrtak</td><td>08:00 – 16:00</td></tr>
+                <tr><td>Petak</td><td>08:00 – 16:00</td></tr>
+                <tr><td>Subota</td><td>09:00 – 13:00</td></tr>
+                <tr><td>Nedjelja</td><td>Zatvoreno</td></tr>
+            </table>
+        </div>
+    </section>
+
+    <section class="kontakt-dodatno">
+        <h2>Dostava i plaćanje</h2>
+
+        <div class="kontakt-card">
+            <h3>Dostava</h3>
+            <p>Dostava na području Hrvatske unutar 2-3 radna dana.</p>
+            <p>Besplatna dostava za narudžbe iznad 200 €.</p>
+        </div>
+
+        <div class="kontakt-card">
+            <h3>Načini plaćanja</h3>
+            <p>Kartično plaćanje</p>
+            <p>Plaćanje pouzećem</p>
+            <p>Bankovna uplata</p>
+        </div>
+
+    </section>
+
+</main>
+
+<!-- KOŠARICA -->
+<div id="cartSidebar" class="cart-sidebar">
+    <div class="cart-header">
+        <h2>Košarica</h2>
+        <span id="zatvoriKosaricu">&times;</span>
+    </div>
+
+    <ul id="kosarica"></ul>
+    <p><strong>Ukupno:</strong> <span id="ukupno">0</span> €</p>
+    <button onclick="ocistiKosaricu()">Očisti</button>
+</div>
+
+<footer>
+    <p>&copy; 2026 Macom | Završni rad</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
